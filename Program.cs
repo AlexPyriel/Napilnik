@@ -1,3 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
+﻿class Player { }
+class Weapon { }
+class UnitMover { }
+class UnitProvider
+{
+    public IReadOnlyCollection<Unit> Units { get; private set; }
+}
