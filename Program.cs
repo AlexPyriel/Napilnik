@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿internal class Program
+{
+    private static void Main(string[] args) { }
 
+    public void Enable()
+    {
+        _effects.StartEnableAnimation();
+    }
+
+    public void Disable()
+    {
+        _pool.Free(this);
+    }
+}
